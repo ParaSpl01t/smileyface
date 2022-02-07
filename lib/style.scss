@@ -1,0 +1,181 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+$dark1: #151719;
+$dark2: #1c1e21;
+$dark3: #272a30;
+$dark4: #3a3c41;
+
+$light1: #eceff4;
+$light2: #e5e9f0;
+$light3: #a8b6bd;
+
+$red: #bf616a;
+$orange: #d08770;
+$yellow: #ebcb8b;
+$green: #a3be8c;
+$purple: #b48ead;
+$blue: #5e81ac;
+$sky: #88c0d0;
+$teal: #8fbcbb;
+$fog: #81a1c1;
+
+@font-face {
+	font-family: 'Manrope';
+	font-weight: 400 800;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/manrope/v11/xn7gYHE41ni1AdIRggexSg.woff2)
+		format('woff2');
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	line-height: 1.5;
+	font-family: 'Manrope', sans-serif;
+	background-color: $dark1;
+	color: $light2;
+}
+
+a {
+	text-decoration: none;
+	font-weight: 600;
+	color: $purple;
+	cursor: pointer;
+
+	&:hover {
+		color: darken($purple, 10%);
+	}
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 64px;
+	padding: 0 64px;
+	background-color: $dark1;
+	border-bottom: 1px solid $dark3;
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+	}
+
+	svg {
+		width: 32px;
+	}
+
+	.links {
+		display: flex;
+		height: 100%;
+
+		a {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 0 16px;
+			color: $light3;
+			opacity: 0.6;
+
+			&:hover {
+				opacity: 1;
+			}
+			&.active {
+				opacity: 1;
+				font-weight: 800;
+			}
+		}
+	}
+}
+
+main {
+	margin-top: 64px;
+
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 32px;
+		padding: 64px 32px;
+	}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid $dark3;
+	color: inherit;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	.info {
+		padding: 0 16px;
+
+		h2 {
+			color: $light1;
+		}
+		p {
+			color: $light3;
+			font-weight: 500;
+		}
+	}
+}
+
+.post {
+	.wrapper {
+		display: block;
+		max-width: 800px;
+		padding: 0 32px 64px;
+	}
+	p {
+		font-size: 18px;
+		word-spacing: 1.5px;
+	}
+	.info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 64px;
+		background-color: $dark2;
+
+		.wrapper {
+			padding: 64px 0;
+		}
+		h1 {
+			font-size: 48px;
+		}
+		p {
+			color: $light3;
+			font-size: 20px;
+		}
+	}
+}
+
+footer {
+	background-color: darken($dark1, 5%);
+	color: $blue;
+	font-weight: 800;
+	font-size: 18px;
+
+	.wrapper {
+		padding: 64px;
+		text-align: center;
+	}
+}
