@@ -51,6 +51,11 @@ a {
 	}
 }
 
+pre {
+	border: 1px solid $dark3;
+	padding: 8px;
+}
+
 .wrapper {
 	width: 100%;
 	max-width: 1000px;
