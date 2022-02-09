@@ -94,13 +94,12 @@ nav {
 			align-items: center;
 			padding: 0 16px;
 			color: $light3;
-			opacity: 0.6;
 
 			&:hover {
-				opacity: 1;
+				color: $blue;
 			}
 			&.active {
-				opacity: 1;
+				color: lighten($blue, 5%);
 				font-weight: 800;
 			}
 		}
@@ -127,6 +126,8 @@ main {
 	img {
 		width: 100%;
 		height: auto;
+		background-image: url('/thumb.svg');
+		background-size: cover;
 	}
 
 	.info {
