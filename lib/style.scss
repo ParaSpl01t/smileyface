@@ -91,6 +91,7 @@ nav {
 	padding: 0 64px;
 	background-color: $dark1;
 	border-bottom: 1px solid $dark3;
+	z-index: 10;
 
 	.wrapper {
 		display: flex;
