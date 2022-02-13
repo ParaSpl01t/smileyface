@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fucking spaces vs fucking tabs.</title>
+		<meta name="description" content="I love tabs, I love spaces and I wanna die. Kill me for fuck's sake." />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="preload"
+			as="font"
+			href="https://fonts.gstatic.com/s/manrope/v11/xn7gYHE41ni1AdIRggexSg.woff2"
+			crossorigin
+		/>
+		<link rel="stylesheet" href="/lib/style.css" />
+		<script src="/lib/microlight.min.js" defer></script>
+	</head>
+	<body>
+		<nav>
+			<div class="wrapper">
+				<svg
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+					></path>
+				</svg>
+				<div class="links">
+					<a class="" href="/">HOME</a>
+					<a
+						target="_blank"
+						href="//github.com/paraspl01t/smileyface/"
+						>GITHUB</a
+					>
+				</div>
+			</div>
+		</nav>
+		<main class="post">
+			<article>
+				<div class="info">
+					<div class="wrapper">
+						<h1>Fucking spaces vs fucking tabs.</h1>
+						<p>I love tabs, I love spaces and I wanna die. Kill me for fuck's sake.</p>
+					</div>
+				</div>
+				<div class="wrapper">
+<h2>The difference</h2>
+<p>
+	Spaces and tabs are similar in a way. "but how?" you might ask. They both
+	suck that's how.
+</p>
+<h2>The problem with spaces.</h2>
+<p>
+	Let's talk tabs first. Suppose there are two developers working on a same
+	git project, Terry and Felix.
+	<i
+		>("T" in Terry stands for <b>TWO</b> and "F" in Felix stands for
+		<b>FOUR</b>)</i
+	>
+</p>
+<p>
+	Terry creates a github repo and all the code uses tabs as indentation (size:
+	2). Felix notices some bugs and decides to contribute. He forks it, Indents
+	with tabs(size : 4), makes some changes and submits a PR.
+</p>
+<p>
+	Now tab size doesn't matter if you're indenting with tabs. Terry reviews the
+	code and merges it. Boom! HAPPY FUCKING ENDING.
+</p>
+<p>
+	Now suppose they both start to indent with spaces for some reason. This time
+	Terry creates a repo with all the code using 2 spaces for indentation. Felix
+	forkes it, makes some changes and submits a PR. Now Terry will review the
+	code and merge and they both will live happily ever after. Right?
+</p>
+<p>
+	<i>
+		<b>NO</b>
+	</i>
+</p>
+<p>
+	You see. Terry is a blind peice of fuck who can't fucking SEE shit, unless
+	it uses 4 space indentation.
+</p>
+<p>
+	He clones the repo, notices 2 spaces indentation and pukes his guts out
+	before turning all the indentation to 4 spaces. (Every major IDE/Text editor
+	has this feature).
+</p>
+<p>
+	Now all he has to do is turn all the indentation to 2 spaces before
+	submitting the PR. But doing this for every file is a pain in the ass. He
+	just submits the PR with 4 spaces and invokes a war with Terry.
+</p>
+<p>This could've been avoided if both of them continued using tabs.</p>
+<h2>The problem with tabs.</h2>
+<p>
+	Unlike you, some developers are quiet good at what they do. And some of them
+	even documents their code with comments.
+</p>
+<p>
+	A tab could be a different number of columns depending on your environment,
+	but a space is always one column. In the documentation must line perfertly
+	no matter what tab size you use. So, using space is the only good option
+	here.
+</p>
+<p>Look at the code below</p>
+<pre><code>/*
+Name:       Greeter
+Author:     ParaSpl01t
+URL:        https://github.com/ParaSpl01t
+LICENCE:    MIT
+*/
+function fuckOff(name) {
+  return `Fuck off, ${name}!`;
+}
+document.getElementById("greeting").innerHTML = fuckOff("dave");</code></pre>
+<p>
+	This code uses 2 spaces for comment tabulation and will look good no matter
+	what tab size you use.
+</p>
+<p>
+	Now suppose the same code used tabs instead of spaces. This code is written
+	by someone who uses tab size : 4.
+</p>
+<pre><code style="tab-size: 4;">/*
+Name:		Fuck off
+Author:		ParaSpl01t
+URL:		https://github.com/ParaSpl01t
+LICENCE:	MIT
+*/
+function fuckOff(name) {
+	return `Fuck off, ${name}!`;
+}
+document.getElementById("greeting").innerHTML = fuckOff("dave");</code></pre>
+<p>
+	The code above looks fine and beautiful. But wait till someone who uses tab
+	size : 2 opens this code.
+</p>
+<pre><code style="tab-size: 2;">/*
+Name:		Fuck off
+Author:		ParaSpl01t
+URL:		https://github.com/ParaSpl01t
+LICENCE:	MIT
+*/
+function fuckOff(name) {
+	return `Fuck off, ${name}!`;
+}
+document.getElementById("greeting").innerHTML = fuckOff("dave");</code></pre>
+<p>Looks ugly as fuck right?</p>
+<h2>The solution</h2>
+<p>Both have their own pros and cons but luckily there's a middleground.</p>
+<p>
+	Use tabs to indent the start of the line, one tab per indent level, and let
+	everyone pick how wide they want that to be.
+</p>
+<p>
+	Use spaces if you're lining up characters within a line, so they always line
+	up regardless of tab size.
+</p>
+<p>
+	Even though we can all use tabs for indentation and spaces for comments,
+	There will always be atleast one sack of shit who will refuse to use this.
+</p></div>
+			</article>
+		</main>
+		<footer>
+			<div class="wrapper">Made with pain in bash</div>
+		</footer>
+	</body>
+</html>
