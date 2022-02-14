@@ -1,0 +1,13 @@
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  Build-Site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: bash smiley.sh
+      - run: git config user.email "18276917+ParaSpl01t@users.noreply.github.com"
+      - run: git config user.name "ParaSpl01t"
+      - run: git add .
+      - run: git commit -m "automatic build"
+      - run: git push origin
