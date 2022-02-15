@@ -4,4 +4,4 @@ jobs:
   Build-Site:
     runs-on: ubuntu-latest
     steps:
-      - uses: ParaSpl01t/smiley.sh@latest
+      - uses: ParaSpl01t/smiley.sh@v3
