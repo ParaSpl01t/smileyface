@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: ParaSpl01t/smiley.sh@v3
+      - uses: ParaSpl01t/smiley.sh@v4
