@@ -31,7 +31,7 @@ $med: 800px;
 $small: 550px;
 
 ::selection {
-	background-color: $purple;
+	background-color: darken($purple, 10%);
 	color: $light1;
 }
 
