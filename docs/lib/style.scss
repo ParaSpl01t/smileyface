@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+:root {
+	color-scheme: dark;
+}
+
 $dark1: #151719;
 $dark2: #1c1e21;
 $dark3: #272a30;
@@ -31,18 +35,6 @@ $small: 550px;
 	font-weight: 200 800;
 	font-display: optional;
 	src: url(./manrope.woff2) format('woff2');
-}
-
-::-webkit-scrollbar {
-	width: 16px;
-}
-::-webkit-scrollbar-track {
-	background: $dark2;
-	border-left: 1px solid $dark3;
-	border-right: 1px solid $dark3;
-}
-::-webkit-scrollbar-thumb {
-	background: $dark4;
 }
 
 body {
