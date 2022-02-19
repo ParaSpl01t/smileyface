@@ -30,6 +30,11 @@ $fog: #81a1c1;
 $med: 800px;
 $small: 550px;
 
+::selection {
+	color: $purple;
+	background: $light1;
+}
+
 @font-face {
 	font-family: 'Manrope';
 	font-weight: 200 800;
