@@ -8,10 +8,10 @@
 	color-scheme: dark;
 }
 
-$dark1: #151719;
-$dark2: #1c1e21;
-$dark3: #272a30;
-$dark4: #3a3c41;
+$dark1: #0d1117;
+$dark2: #161b22;
+
+$border: #30363d;
 
 $light1: #eceff4;
 $light2: #e5e9f0;
@@ -62,7 +62,7 @@ a {
 }
 
 pre {
-	border: 1px solid $dark3;
+	border: 1px solid $border;
 	padding: 16px;
 	overflow-x: auto;
 	border-radius: 4px;
@@ -86,7 +86,7 @@ nav {
 	height: 64px;
 	padding: 0 64px;
 	background-color: $dark1;
-	border-bottom: 1px solid $dark3;
+	border-bottom: 1px solid $border;
 	z-index: 10;
 
 	.wrapper {
@@ -142,7 +142,8 @@ main {
 }
 
 .card {
-	border: 1px solid $dark3;
+	background-color: $dark2;
+	border: 1px solid $border;
 
 	article {
 		display: flex;
@@ -205,7 +206,8 @@ main {
 }
 
 footer {
-	background-color: darken($dark1, 5%);
+	background-color: $dark1;
+	border-top: 1px solid $border;
 	color: $blue;
 	font-weight: 800;
 	font-size: 18px;
