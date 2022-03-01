@@ -145,6 +145,7 @@ main {
 	background-color: $dark2;
 	border: 1px solid $border;
 	border-radius: 2px;
+	overflow: hidden;
 
 	article {
 		display: flex;
