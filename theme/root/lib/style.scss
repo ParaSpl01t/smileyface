@@ -132,6 +132,15 @@ main {
 		gap: 32px;
 		padding: 64px 32px;
 
+		&.intro {
+			display: block;
+			padding-bottom: 0;
+
+			h1 {
+				font-size: 36px;
+			}
+		}
+
 		@media screen and (max-width: $med) {
 			grid-template-columns: 1fr 1fr;
 		}
@@ -144,7 +153,7 @@ main {
 .card {
 	background-color: $dark2;
 	border: 1px solid $border;
-	border-radius: 2px;
+	border-radius: 4px;
 	overflow: hidden;
 
 	article {
