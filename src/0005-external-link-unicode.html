@@ -1,0 +1,120 @@
+---
+title: There's no external link character in unicode.
+desc: Some faggots at unicode.org decided that we don't need external link character.
+slug: external-link-unicode
+author: ParaSpl01t
+created: 1647007656
+updated: 1647007656
+---
+
+<h2>Why we need external link character anyway?</h2>
+<p>
+	External link icon (better known and used as "open in new tab icon") is used
+	by almost every site, to let the users know that the link they are about to
+	click, opens in a new tab.
+</p>
+<p>
+	This shithole of a blog is under heavy development, and I'm constantly
+	finding the most simple ways to make this blog more user friendly. I try to
+	list all the things that pisses me off on the modern web, and try to
+	implement the solutions on this site.
+</p>
+<p>
+	One thing that makes me lose my fucking mind is when the web developer
+	doesn't make the use of <kbd>target="_blank"</kbd> for opening the external
+	links in new tab.
+</p>
+<p>
+	If you're linking to something related to the topic in the middle of the
+	article, make sure to open that in a seperate tab.
+</p>
+<p>
+	Like bitch.. what the fuck? you just sent your visitor to another site,
+	without even letting them read the entire god damn article.
+</p>
+<p>
+	Foul language aside, I'm actually a good developer. Whenever there's a need
+	to link to
+	<a
+		href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+		target="_blank"
+		rel="noopener noreferrer"
+		>something external</a
+	>
+	in the middle of the article, I make sure to open that in a new tab.
+</p>
+<p>
+	For making this more user friendly, I decided to show an "external link"
+	icon next to the links which uses <kbd>target="blank"</kbd> attribute.
+</p>
+<p>This is current hack/fuckery in pure CSS.</p>
+<pre><code>a[target='_blank']::after {
+	display: inline-flex;
+	content: '🡥';
+	margin-left: 8px;
+	justify-content: center;
+	align-items: center;
+	height: 18px;
+	width: 18px;
+	border: 2px solid currentColor;
+	border-radius: 4px;
+}</code></pre>
+<p>
+	This would've been simple, If there was a fucking character for it in the
+	unicode. I would've just used that character instead of "🡥" and saved a few
+	bytes of code.
+</p>
+<h2>Why is there no external tab character in unicode?</h2>
+<p>
+	Before creating this horseshit of a hack/mess in my CSS, I was optimistic. I
+	believed that a character for "external link" must exist among 144,697
+	characters in unicode. Oh Boy was I wrong..
+</p>
+<p>
+	There are literally fuck tons of useless characters in unicode. And somehow
+	there is not a character as useful and widely used as this. While trying to
+	find something that at-least resembles the "external link" icon, I found
+	this article :
+	<a
+		href="https://dafoster.net/articles/2018/11/24/why-isnt-the-external-link-symbol-in-unicode/"
+		target="_blank"
+		rel="noopener noreferrer"
+		>Why isn't the external link symbol in Unicode?</a
+	>
+</p>
+<p>
+	<b>TLDR : </b> In 2006, Someone submitted a well written proposal to add an
+	"external link" character to unicode. The proposal was ignored for 6 years
+	and was finally rejected in 2012.
+</p>
+<p>
+	Apperently the dicksuckers at unicode believe that "the external link icon
+	is not an element of plain text". Bitch! emojis ain't an element of plain
+	text either. But we still have them in unicode.
+</p>
+<p>
+	How is "external link" different from something as useful as ©? I don't know
+	who is person who rejected this proposal, but I'll assume that either
+</p>
+<ul>
+	<li>
+		They are some old farts who have no idea about what the fuck is going on
+		in this world.
+	</li>
+	<li>meth and cocaine.</li>
+	<li>
+		They are good for nothing Idiots who just want to watch the world burn.
+	</li>
+	<li>more meth and cocaine.</li>
+</ul>
+<p>or all of the above.</p>
+<p>
+	Go check the footer on
+	<a
+		href="https://home.unicode.org/"
+		target="_blank"
+		rel="noopener noreferrer"
+		>Unicode's homepage</a
+	>. Faggots are literally using "↗" character as a substitue for external
+	link character. I'm fucking done with these guys.
+</p>
