@@ -30,6 +30,10 @@ $fog: #81a1c1;
 $med: 800px;
 $small: 550px;
 
+$td: 0.2s;
+$tt: ease;
+$t: $td $tt;
+
 ::selection {
 	background-color: darken($purple, 10%);
 	color: $light1;
@@ -96,21 +100,34 @@ nav {
 		height: 100%;
 	}
 
+	a {
+		display: flex;
+		padding: 8px;
+		border-radius: 24px;
+		color: $light1;
+		transition: background-color $t;
+
+		&:hover {
+			background-color: $dark2;
+			color: $light1;
+		}
+	}
+
 	svg {
 		width: 32px;
 	}
 
 	.links {
 		display: flex;
+		align-items: center;
+		gap: 8px;
 		height: 100%;
 
 		a {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
+			height: 48px;
 			align-items: center;
+			transition: color $t, background-color $t;
 			padding: 0 16px;
-			color: $light3;
 
 			&:hover {
 				color: $blue;
@@ -215,13 +232,28 @@ main {
 			color: $light3;
 		}
 	}
+	.bottom {
+		text-align: center;
+	}
+	.back {
+		padding: 16px;
+		border-radius: 4px;
+		color: $light3;
+		background-color: $dark2;
+		transition: color $t, background-color $t;
+
+		&:hover {
+			color: $light1;
+			background-color: lighten($dark2, 5%);
+		}
+	}
 }
 
 footer {
 	background-color: $dark1;
 	border-top: 1px solid $border;
 	color: $blue;
-	font-weight: 800;
+	font-weight: 600;
 	font-size: 18px;
 
 	.wrapper {
