@@ -61,7 +61,7 @@ a {
 	cursor: pointer;
 
 	&:hover {
-		color: darken($blue, 10%);
+		color: lighten($blue, 15%);
 	}
 }
 
