@@ -105,5 +105,12 @@
 		<footer>
 			<div class="wrapper">Made with pain in bash</div>
 		</footer>
+		<script>
+			document.referrer === 'https://smileyface.ga/' &&
+				(document.querySelector('.back').onclick = e => {
+					e.preventDefault()
+					history.back()
+				})
+		</script>
 	</body>
 </html>
